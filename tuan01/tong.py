@@ -1,6 +1,6 @@
 import sys
 
-# Đọc dữ liệu từ file test truyền vào
+# Đọc dữ liệu từ file test truyền vào cấu trúc chuẩn đầu vào
 input_data = sys.stdin.read().split()
 
 def main():
@@ -13,7 +13,7 @@ def main():
     # Chuyển đổi các số còn lại thành một mảng số nguyên
     a = [int(x) for x in input_data[1:n+1]]
     
-    # Tính tổng và tìm số lớn nhất
+    # Tính tổng và tìm số lớn nhất (Python tự động xử lý số nguyên lớn vô hạn)
     sumv = sum(a)
     maxv = max(a)
     
