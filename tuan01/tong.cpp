@@ -1,14 +1,9 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
 int main() {
-    // Tối ưu hóa tốc độ đọc ghi dữ liệu đầu vào chuẩn
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
-
     int n;
     if (!(cin >> n)) return 0;
 
@@ -17,10 +12,8 @@ int main() {
         cin >> a[i];
     }
 
-    // Bẫy 2: Biến tổng phải khai báo kiểu long long để tránh tràn số int
-    long long sumv = 0; 
-    // Bẫy 1: Khởi tạo giá trị lớn nhất bằng phần tử đầu tiên, không khởi tạo bằng 0
-    int maxv = a[0];    
+    long long sumv = 0; // dung long long de khong bi tran so khi test lon
+    int maxv = a[0];    // gan bang phan tu dau tien de xu ly day so am
 
     for (int i = 0; i < n; i++) {
         sumv += a[i];
